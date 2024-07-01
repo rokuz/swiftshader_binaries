@@ -1,6 +1,6 @@
 # SwiftShader binaries for multiple platforms
 
-Download binaries from the latest release:
+Download binaries from the latest [release](https://github.com/rokuz/swiftshader_binaries/releases/tag/release_1).
 
 ## Rebuild
 
