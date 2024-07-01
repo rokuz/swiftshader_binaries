@@ -101,13 +101,6 @@ index dda6d9166..03fcd0b78 100644
  	auto handleTy = i8PtrTy;
  	auto boolTy = i1Ty;
  	auto promiseTy = T(YieldType);
-diff --git a/third_party/llvm-project b/third_party/llvm-project
-index fc3b34c50..3b5b5c1ec 160000
---- a/third_party/llvm-project
-+++ b/third_party/llvm-project
-@@ -1 +1 @@
--Subproject commit fc3b34c50803274b8ba3b8a30df9177b7d29063c
-+Subproject commit 3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff
 ```
 
 ### macOS
