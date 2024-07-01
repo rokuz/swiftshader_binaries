@@ -107,13 +107,29 @@ index dda6d9166..03fcd0b78 100644
 #### arm64
 ```
 cd build
-cmake .. -DSWIFTSHADER_BUILD_TESTS=OFF -DREACTOR_BACKEND="LLVM-Submodule"
-cmake --build . --parallel
+cmake .. -DSWIFTSHADER_BUILD_TESTS=ON -DREACTOR_BACKEND="LLVM-Submodule" -DCMAKE_BUILD_TYPE=Release
+cmake --build . --parallel --config Release
+./vk-unittests
 ```
 
 #### x86_64
 ```
 cd build
-cmake .. -DSWIFTSHADER_BUILD_TESTS=OFF -DREACTOR_BACKEND="LLVM-Submodule" -DCMAKE_OSX_ARCHITECTURES="x86_64"
-cmake --build . --parallel
+cmake .. -DSWIFTSHADER_BUILD_TESTS=ON -DREACTOR_BACKEND="LLVM-Submodule" -DCMAKE_OSX_ARCHITECTURES="x86_64" -DCMAKE_BUILD_TYPE=Release
+cmake --build . --parallel --config Release
+./vk-unittests
+```
+
+### Windows
+#### arm64
+```
+```
+
+#### x86_64
+```
+cd build
+cmake .. -DSWIFTSHADER_BUILD_TESTS=ON -DREACTOR_BACKEND="LLVM-Submodule" -DCMAKE_BUILD_TYPE=Release
+cmake --build . --parallel --config Release
+cd Release
+.\vk-unittests.exe
 ```
