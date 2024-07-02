@@ -14,7 +14,7 @@ You need to apply [the following patch](https://github.com/rokuz/swiftshader_bin
 #### arm64
 ```
 cd build
-cmake .. -DSWIFTSHADER_BUILD_TESTS=ON -DREACTOR_BACKEND="LLVM-Submodule" -DCMAKE_BUILD_TYPE=Release
+cmake .. -DSWIFTSHADER_BUILD_TESTS=ON -DREACTOR_.e" -DCMAKE_BUILD_TYPE=Release
 cmake --build . --parallel --config Release
 ./vk-unittests
 ```
@@ -30,6 +30,11 @@ cmake --build . --parallel --config Release
 ### Windows
 #### arm64
 ```
+cd build
+cmake .. -A ARM64 -DSWIFTSHADER_BUILD_TESTS=ON -DREACTOR_BACKEND="LLVM-Submodule" -DCMAKE_BUILD_TYPE=Release
+cmake --build . --parallel --config Release
+cd Release
+.\vk-unittests.exe
 ```
 
 #### x86_64
