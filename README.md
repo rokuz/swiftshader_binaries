@@ -8,10 +8,7 @@ SwiftShader's commit: [a0ec371d8331d787c61eccc89fb411019330314e](https://github.
 
 LLVM: [llvmorg-18.1.8](https://github.com/llvm/llvm-project/tree/llvmorg-18.1.8)
 
-SwiftShader patch:
-```
-
-```
+You need to apply [the following patch](https://github.com/rokuz/swiftshader_binaries/blob/main/swiftshader.patch) to swiftshader.
 
 ### macOS
 #### arm64
